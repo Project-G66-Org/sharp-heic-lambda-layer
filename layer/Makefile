@@ -78,8 +78,8 @@ libvips: installLib libheif libwebp
 # 	cd vips-$(VIPS_VERSION)/tools && ./vips rot $(EXAMPLE_IMAGE_PATH)/example.heic $(EXAMPLE_IMAGE_PATH)/example-rot.jpeg d90
 
 installLib:
-	apt-get update
-	apt-get -y install dnf
+	sudo apt-get update
+	sudo apt-get -y install dnf
 	dnf groupinstall -y "Development Tools" && \
 	dnf install -y \
 		glib2-devel \
