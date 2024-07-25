@@ -79,9 +79,7 @@ libvips: installLib libheif libwebp
 
 installLib:
 	sudo apt-get update
-	sudo apt-get -y install dnf
-	dnf groupinstall -y "Development Tools" && \
-	dnf install -y \
+	sudo apt-get install -y \
 		glib2-devel \
 		expat-devel \
 		libjpeg-turbo-devel \
