@@ -79,20 +79,6 @@ libvips: installLib libheif libwebp
 
 installLib:
 	sudo apt-get update
-	sudo apt-get install -y \
-		glib2-devel \
-		expat-devel \
-		libjpeg-turbo-devel \
-		libpng-devel \
-		giflib-devel \
-		libexif-devel \
-		librsvg2-devel \
-		libtiff-devel \
-		lcms2-devel \
-		gobject-introspection-devel \
-		cmake \
-		nasm \
-		pkg-config \
-		meson \
-		ninja-build
+	sudo apt-get -y install dnf
+
 
